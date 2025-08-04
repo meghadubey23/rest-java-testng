@@ -1,0 +1,23 @@
+name: Smoke Tests - Master Branch
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  run-smoke-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '18'
+
+      - name: Run Smoke Tests with Maven
+        run: mvn test -Dgroups=smoke
