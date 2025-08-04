@@ -22,7 +22,7 @@ pipeline {
             }
             post {
                 always {
-                    testng '**/target/surefire-reports/*.xml'
+                    junit '**/target/surefire-reports/*.xml'
                 }
             }
         }
