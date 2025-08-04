@@ -36,15 +36,6 @@
             <version>2.0.7</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- JSONAssert -->
-        <dependency>
-            <groupId>org.skyscreamer</groupId>
-            <artifactId>jsonassert</artifactId>
-            <version>1.5.1</version>
-            <scope>test</scope>
-        </dependency>
-
         <!-- WireMock -->
         <dependency>
             <groupId>com.github.tomakehurst</groupId>
@@ -56,12 +47,6 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>5.5.5</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin.external.google</groupId>
-            <artifactId>android-json</artifactId>
-            <version>0.0.20131108.vaadin1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
